@@ -62,8 +62,8 @@ window.onload = () => {
         loadPlaces(position.coords)
             .then((places) => {
                 places.forEach((place) => {
-                    const latitude = place.location.lat + 0.000006;
-                    const longitude = place.location.lng+ 0.000006;
+                    const latitude = place.location.lat + 0.000002;
+                    const longitude = place.location.lng+ 0.000002;
 
                     // add place icon
                     const icon = document.createElement('a-image');
