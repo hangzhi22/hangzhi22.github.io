@@ -72,7 +72,7 @@ window.onload = () => {
                     icon.setAttribute('src', 'https://raw.githubusercontent.com/nicolocarpignoli/GeoAR.js/master/examples/assets/map-marker.png');
 
                     // for debug purposes, just show in a bigger scale, otherwise I have to personally go on places...
-                    icon.setAttribute('scale', '20000, 20000');
+                    icon.setAttribute('scale', '200, 200');
 
                     icon.addEventListener('loaded', () => window.dispatchEvent(new CustomEvent('gps-entity-place-loaded')));
 
