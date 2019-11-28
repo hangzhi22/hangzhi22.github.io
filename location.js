@@ -66,8 +66,7 @@ window.onload = () => {
                     const latitude = place.location.lat;
                     const longitude = place.location.lng;
 
-                    document.getElementById("lat").innerText = latitude;
-                    document.getElementById("lng").innerText = longitude;
+                    prompt("lat:" + latitude + ";longitidu:" + longitude);
 
                     // add place icon
                     const icon = document.createElement('a-image');
