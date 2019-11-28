@@ -15,21 +15,12 @@
 <script src="./location.js"></script>
 
 <body style='margin: 0; overflow: hidden;'>
-    <div>
-        <div sstyle='position: absolute; top: 10px; width:100%; text-align: center;z-index:100'>
-            <h1>location: <span id="lat">-1</span>; <span id="lng">-1</span> </h1>
-        </div>
-        <div>
-            <a-scene cursor='rayOrigin: mouse; fuse: true; fuseTimeout: 0;' raycaster="objects: [gps-entity-place];"
-                vr-mode-ui="enabled: false" embedded
-                arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+    <a-scene cursor='rayOrigin: mouse; fuse: true; fuseTimeout: 0;' raycaster="objects: [gps-entity-place];"
+        vr-mode-ui="enabled: false" embedded
+        arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
 
-                <a-camera gps-camera rotation-reader>
-                </a-camera>
-            </a-scene>
-        </div>
-
-    </div>
-
+        <a-camera gps-camera rotation-reader>
+        </a-camera>
+    </a-scene>
 
 </body>

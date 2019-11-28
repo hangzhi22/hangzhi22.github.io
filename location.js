@@ -6,9 +6,8 @@ const loadPlaces = function(coords) {
         {
             name: "Your place name",
             location: {
-                lat: 0, // add here latitude if using static data
-                lng: 0, // add here longitude if using static data
-
+                lat: coords.latitude, // add here latitude if using static data
+                lng: coords.longitude, // add here longitude if using static data
             }
         },
     ];
@@ -65,8 +64,6 @@ window.onload = () => {
                 places.forEach((place) => {
                     const latitude = place.location.lat;
                     const longitude = place.location.lng;
-
-                    prompt("lat:" + latitude + ";longitidu:" + longitude);
 
                     // add place icon
                     const icon = document.createElement('a-image');
