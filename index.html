@@ -15,12 +15,37 @@
 <script src="./location.js"></script>
 
 <body style='margin: 0; overflow: hidden;'>
-    <a-scene cursor='rayOrigin: mouse; fuse: true; fuseTimeout: 0;' raycaster="objects: [gps-entity-place];"
-        vr-mode-ui="enabled: false" embedded
-        arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+    <a-scene embedded arjs="sourceType:webcam; maxDetectionRate:30; debugUiEnabled:false;">
+        <a-marker preset="hiro" id="animated-marker" emitevents="true" cursor="rayOrigin: mouse">
+            <a-entity blue-box id="blue-bo"
+                animation="property: rotation; dur: 3000; easing: linear; loop: true; from:0 0 0; to: 0 360 0;">
 
-        <a-camera gps-camera rotation-reader>
-        </a-camera>
+                <a-box position="0 0.5 2" rotation="0 0 0" scale="0.5 0.5 0.5" color="blue"></a-box>
+            </a-entity>
+
+            <a-entity red-box id="red-box"
+                animation="property: rotation; dur: 5000; easing: linear; loop: true; from:0 0 0; to: 0 360 0;">
+
+                <a-box position="0 0.5 1" rotation="0 0 0" scale="0.5 0.5 0.5" color="red"></a-box>
+            </a-entity>
+
+            <a-box position="0 0.5 0" rotation="0 0 0" scale="0.5 0.5 0.5" color="green"></a-box>
+        </a-marker>
+
+
+        <a-entity red-box id="red-box"
+            animation="property: rotation; dur: 5000; easing: linear; loop: true; from:0 0 0; to: 0 360 0;">
+
+            <a-box position="1 1.6 1" rotation="0 0 0" scale="0.5 0.5 0.5" color="red"></a-box>
+        </a-entity>
+        
+        <a-entity camera look-controls position="0 1.6 0"></a-entity>
+        <!-- <a-entity camera>
+            <a-entity cursor="fuse: true; fuseTimeout: 500">
+            </a-entity>
+        </a-entity> -->
     </a-scene>
+
+
 
 </body>
