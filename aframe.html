@@ -6,34 +6,30 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Hello. WebAR!</title>
-    <script src="./lib/aframe/aframe.js"></script>
-    <script src="./lib/aframe/aframe-animation-component.js"></script>
-    <script src="./lib/aframe/aframe-ar.js"> </script>
-    <script src="aframe.js"></script>
+    <script src="https://aframe.io/releases/0.8.2/aframe.js"></script>
+    <script src="https://unpkg.com/aframe-animation-component@4.1.2/dist/aframe-animation-component.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"> </script>
+    <script src="src/aframe.js"></script>
 </head>
 
 <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs="sourceType:webcam; maxDetectionRate:30; debugUiEnabled:false;">
         <a-marker preset="hiro" id="animated-marker" emitevents="true" cursor="rayOrigin: mouse">
-            <a-entity blue-box id="blue-bo"
+            <a-entity blue-box id="blue-box"
                 animation="property: rotation; dur: 3000; easing: linear; loop: true; from:0 0 0; to: 0 360 0;">
-
                 <a-box position="0 0.5 2" rotation="0 0 0" scale="0.5 0.5 0.5" color="blue"></a-box>
             </a-entity>
-
             <a-entity red-box id="red-box"
                 animation="property: rotation; dur: 5000; easing: linear; loop: true; from:0 0 0; to: 0 360 0;">
-
                 <a-box position="0 0.5 1" rotation="0 0 0" scale="0.5 0.5 0.5" color="red"></a-box>
             </a-entity>
-
             <a-box position="0 0.5 0" rotation="0 0 0" scale="0.5 0.5 0.5" color="green"></a-box>
         </a-marker>
-
         <a-entity camera>
             <a-entity cursor="fuse: true; fuseTimeout: 500">
             </a-entity>
         </a-entity>
     </a-scene>
+    <div style="position: fixed;"><div id='aframe'></div></div>
 </body>
 </html>
