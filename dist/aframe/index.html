@@ -10,7 +10,7 @@
 <body style='margin : 0px; overflow: hidden;'>
   <script src="aframe.js"></script>
   <div id="question" style="z-index: 1000;position: absolute; top: 50px; left: 50px;">pending question:</div>
-  <a-scene>
+  <a-scene embedded arjs> 
     <a-assets>
       <a-asset-item id="grass" src="https://hangzhi22.github.io/models/grass.glb" />
       <a-asset-item id="carpet" src="https://hangzhi22.github.io/models/carpet.glb" />
@@ -18,31 +18,30 @@
       <a-asset-item id="spirit_ball" src="https://hangzhi22.github.io/models/spirit_ball.glb" />
       <a-asset-item id="spirit_evee" src="https://hangzhi22.github.io/models/spirit_evee.glb" />
       <a-asset-item id="spritit_flower" src="https://hangzhi22.github.io/models/spritit_flower.glb" />
-  </a-assets>
+    </a-assets>
 
-  <!-- required to trigger click-->
-  <a-marker preset="hiro" id="animated-marker" emitevents="true" cursor="rayOrigin: mouse">
-      <a-gltf-model src="#carpet" scale="0.2 0.2 0.2" position="-4 0 -2" animation-mixer></a-gltf-model>
-      <a-gltf-model src="#grass" scale="0.1 0.1 0.1" position="-4.3 0.3 -3.7" animation-mixer></a-gltf-model>
-      <a-gltf-model src="#grass" scale="0.1 0.1 0.1" position="-2 0.3 0" animation-mixer></a-gltf-model>
-      <a-gltf-model src="#Luigi" scale="1.5 1.5 1.5" position="-4.3 0.5 -3.0" animation-mixer></a-gltf-model>
-      <a-gltf-model src="#spirit_ball" scale="0.05 0.05 0.05" position="3 0.5 -2" animation-mixer></a-gltf-model>
-      <a-gltf-model src="#spirit_ball" scale="0.05 0.05 0.05" position="-3.8 0.5 -2" animation-mixer>
-      </a-gltf-model>
+    <!-- <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box> -->
+    <a-gltf-model src="#carpet" scale="0.15 0.15 0.15" position="-3 0 0"></a-gltf-model>
+    <a-gltf-model src="#grass" scale="0.1 0.1 0.1" position="-3 0 1.7"></a-gltf-model>
+    <a-gltf-model src="#grass" scale="0.1 0.1 0.1" position="-3 0 -1.3"></a-gltf-model>
+    <a-gltf-model src="#Luigi" scale="1.5 1.5 1.5" position="-3.2 0.5 -1.0"></a-gltf-model>
+    <a-gltf-model src="#spirit_ball" scale="0.05 0.05 0.05" position="2 0.5 0"></a-gltf-model>
+    <a-gltf-model src="#spirit_ball" scale="0.05 0.05 0.05" position="-3 0.5 0">
+    </a-gltf-model>
 
-      <a-entity spirit_evee>
-          <a-gltf-model src="#spirit_evee" rotation="0 90 0" scale="0.15 0.15 0.15" position="-1.0 0 -2"
-              animation-mixer></a-gltf-model>
-      </a-entity>
+    <a-entity spirit_evee>
+      <a-gltf-model src="#spirit_evee" rotation="0 90 0" scale="0.15 0.15 0.15" position="-1.0 0 0"></a-gltf-model>
+    </a-entity>
 
-      <a-entity spritit_flower>
-          <a-gltf-model src="#spritit_flower" rotation="0 -90 0" scale="4 4 4" position="1.0 0 -2"
-              animation-mixer></a-gltf-model>
-      </a-entity>
+    <a-entity spritit_flower>
+      <a-gltf-model src="#spritit_flower" rotation="0 -90 0" scale="4 4 4" position="1.0 0 0"></a-gltf-model>
+    </a-entity>
 
-      <a-light  color="white" position="0 5 0"></a-light>
-      <a-light type="ambient" color="white" intensity="4"></a-light>
-  </a-marker>
+    <a-light color="white" position="0 5 0"></a-light>
+    <a-light type="ambient" color="white" intensity="4"></a-light>
+
+    <!-- define a camera which will move according to the marker position -->
+    <a-marker-camera preset='hiro' emitevents="true" cursor="rayOrigin: mouse"></a-marker-camera>
   </a-scene>
 <script type="text/javascript" src="/dist/aframe.js"></script></body>
 
