@@ -50193,7 +50193,7 @@ $1:function(a){return new N.eI("https://bcg-public.oss-cn-beijing.aliyuncs.com/s
 $S:22}
 L.mH.prototype={
 O:function(a,b){var s=null,r=this.c,q=this.d,p=t.Z
-return M.mZ(s,T.lM(H.b([U.dD("https://bcg-public.oss-cn-beijing.aliyuncs.com/sports_day/portal_top.jpg",s),M.jL(s,D.xN(T.AW(H.b([L.ta("Beijing",q)],p),C.fy),new L.R3(b),r),s,s,s,36,new V.a1(64,12,64,12),s,s),M.jL(s,D.xN(T.AW(H.b([L.ta("Hang kong",q)],p),C.fy),new L.R4(b),r),s,s,s,36,new V.a1(64,12,64,12),s,s),M.jL(s,D.xN(T.AW(H.b([L.ta("Shanghai",q)],p),C.fy),new L.R5(b),r),s,s,s,36,new V.a1(64,12,64,12),s,s),M.jL(s,D.xN(T.AW(H.b([L.ta("Shenzhen",q)],p),C.fy),new L.R6(b),r),s,s,s,36,new V.a1(64,12,64,12),s,s),M.jL(s,D.xN(T.AW(H.b([L.ta("Taipei",q)],p),C.fy),new L.R7(b),r),s,s,s,36,new V.a1(64,12,64,12),s,s),new R.hO(s),U.dD("https://bcg-public.oss-cn-beijing.aliyuncs.com/sports_day/portal_bottom.jpg",s)],p),C.be,C.c_))}}
+return M.mZ(C.j,T.lM(H.b([U.dD("https://bcg-public.oss-cn-beijing.aliyuncs.com/sports_day/portal_top.jpg",s),M.jL(s,D.xN(T.AW(H.b([L.ta("Beijing",q)],p),C.fy),new L.R3(b),r),s,s,s,36,new V.a1(64,12,64,12),s,s),M.jL(s,D.xN(T.AW(H.b([L.ta("Hong kong",q)],p),C.fy),new L.R4(b),r),s,s,s,36,new V.a1(64,12,64,12),s,s),M.jL(s,D.xN(T.AW(H.b([L.ta("Shanghai",q)],p),C.fy),new L.R5(b),r),s,s,s,36,new V.a1(64,12,64,12),s,s),M.jL(s,D.xN(T.AW(H.b([L.ta("Shenzhen",q)],p),C.fy),new L.R6(b),r),s,s,s,36,new V.a1(64,12,64,12),s,s),M.jL(s,D.xN(T.AW(H.b([L.ta("Taipei",q)],p),C.fy),new L.R7(b),r),s,s,s,36,new V.a1(64,12,64,12),s,s),new R.hO(s),U.dD("https://bcg-public.oss-cn-beijing.aliyuncs.com/sports_day/portal_bottom.jpg",s)],p),C.be,C.c_))}}
 L.R3.prototype={
 $0:function(){return K.ee(this.a).e8("/portal/bj",t._)},
 $S:8}
